@@ -9,8 +9,8 @@ The game is a single player shooting game that mimics the functionality of the f
 
 After adjusting the values in the settings view the page must be __refreshed__ for changes to take effect.
 
-<img src="app/images/screenshot.jpg?raw=true" width="50%"/>
-<img src="app/images/screenshot1.jpg?raw=true" width="50%" />
+<img src="app/images/screenshot.jpg?raw=true" width="45%"/>
+<img src="app/images/screenshot1.jpg?raw=true" width="45%" />
 
 To run the game locally do as follows after cloning this repo:
 
