@@ -1,0 +1,73 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+        <title>Duck Hunt</title>
+
+        <link rel="stylesheet" href="styles/vendor.css">
+
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+
+    <body>
+        <section id="container" class="background-sky">
+
+            <div class="background-cloud"></div>
+
+            <div class="background-cloud background-cloud-2"></div>
+
+            <canvas id="stage" width="1280" height="540"></canvas>
+
+            <canvas id="background" class="background-flora" width="1280" height="540" oncontextmenu="return false;"></canvas>
+
+            <section class="actions background-land clearfix">
+                <div class="shells"></div>
+                <div id="scoreboard"></div>
+                <a class="btn-settings btn-settings-open" href="#settings"></a>
+            </section>
+        </section>
+
+        <section id="settings" class="background-fiber">
+
+            <section class="settings-main">
+                <canvas id="settings-canvas" width="1280" height="540"></canvas>
+                <section class="settings-actions">
+
+                    <div class="slider-wrapper slider-timescale clearfix">
+                        <span class="slider-title">Timescale:</span>
+                        <input type="text" data-slider="true" data-slider-highlight="true" data-slider-range="0,2">
+                        <span class="slider-counter">1.000</span>
+                    </div>
+
+                    <div class="slider-wrapper slider-ammo clearfix">
+                        <span class="slider-title">Ammo:</span>
+                        <input type="text" data-slider="true" data-slider-highlight="true" data-slider-range="0,30">
+                        <span class="slider-counter">15</span>
+                    </div>
+
+                    <p class="message">For changes to take effect you must <em>refresh</em> the page.</p>
+                </section>
+            </section>
+
+            <aside class="settings-sidebar">
+                <div class="curve-container"></div>
+                <button name="button-remove" class="button button-caution settings-curve-remove inactive">Delete</button>
+                <button name="button-add" class="button button-primary settings-curve-add">Add</button>
+                <a class="btn-settings btn-settings-mute" data-action="mute" href="#settings"></a>
+                <a class="btn-settings btn-settings-back" href="#play"></a>
+            </aside>
+
+        </section>
+
+        <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
