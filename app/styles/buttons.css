@@ -1,0 +1,60 @@
+.button {
+    margin: 0.5em 0;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 0em;
+}
+
+.button.inactive {
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: none;
+}
+
+.btn-settings {
+    position: relative;
+    margin: 0.5em;
+    width: 4em; height: 4em;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0px 1px 5px black;
+    box-sizing:content-box;
+    -webkit-transition:all 0.25s;
+}
+
+.btn-settings-open {
+    float:right;
+    background: rgba(41, 36, 36, 0.70) url('../images/settings/cogwheel.svg') no-repeat center center;
+    background-size:60%;
+    border-radius:0.5em;
+}
+
+.btn-settings-open:active {
+    background-color:rgba(41, 36, 36, 0.9);
+    box-shadow:inset 0px 0px 2px rgb(41, 27, 27);
+}
+
+.btn-settings-back {
+    float:right;
+    background: rgb(55, 172, 65) url('../images/settings/arrow-right.svg') no-repeat center center;
+}
+
+.btn-settings-back:active {
+    background-color: rgb(28, 95, 34);
+    box-shadow: inset 0px 0px 5px rgb(134, 8, 8);
+    border:1px solid rgba(10, 4, 4, 0.5);
+    left:1px; top:-1px;
+}
+
+.btn-settings-mute {
+    float:left;
+    background: rgb(235, 45, 45) url('../images/settings/sounds.svg') no-repeat center center;
+    background-position-x: -100%;
+}
+
+.btn-settings-mute.off, .btn-settings-mute:active {
+    background-position-x: 200%;
+    box-shadow: inset 0px 0px 5px rgb(134, 8, 8);
+    border:1px solid rgba(10, 4, 4, 0.5);
+    background-color: rgb(55, 172, 65);
+    top:-1px; left:-1px;
+}

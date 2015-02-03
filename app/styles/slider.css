@@ -1,0 +1,37 @@
+.slider-wrapper {
+    margin-bottom: 1.5em;
+}
+
+.slider-wrapper:last-child {
+    margin-bottom:0;
+}
+
+.slider-wrapper .slider {
+    float:left;
+    width:75%;
+}
+.slider-wrapper .slider > .highlight-track, .slider-wrapper .slider > .track {
+    height:24px;
+}
+.slider-wrapper .slider > .dragger {
+    width:36px; height:36px;
+}
+.slider-wrapper .slider-counter {
+    float: left;
+    margin-top:5px;
+    border-radius: 3px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    text-shadow: -1px -1px #333;
+    font-size: 1.5em;
+}
+
+.slider-title {
+    float:left;
+    min-width: 5em;
+    color:white;
+    font-weight: bold;
+    font-size:1.2em;
+    line-height: 1.6em;
+}

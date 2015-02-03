@@ -1,0 +1,40 @@
+{
+  "name": "duckhunt",
+  "version": "1.0.0",
+  "description": "A proof-of-concept HTML5 game developed as the project work for [T-111.5350 Multimedia Programming](https://noppa.aalto.fi/noppa/kurssi/t-111.5350/etusivu) course at [Aalto SCI](http://sci.aalto.fi/en/). The game supports touch interactions. Visit http://make.kapsi.fi/duckhunt for the live version.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-core": "^5.0.0",
+    "chalk": "^0.5.1",
+    "connect": "3.3.4",
+    "connect-livereload": "^0.5.2",
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-cached": "1.0.2",
+    "gulp-csso": "^0.2.9",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-livereload": "^3.5.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-postcss": "^4.0.2",
+    "gulp-print": "^1.1.0",
+    "gulp-size": "^1.2.0",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-uglify": "^1.1.0",
+    "gulp-useref": "^1.1.1",
+    "gulp-util": "^3.0.2",
+    "jshint-stylish": "^1.0.0",
+    "lazypipe": "^0.2.2",
+    "minimist": "^1.1.0",
+    "opn": "^1.0.1",
+    "serve-index": "^1.6.0",
+    "serve-static": "^1.8.1",
+    "wiredep": "^2.2.2"
+  }
+}

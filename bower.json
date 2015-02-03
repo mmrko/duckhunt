@@ -1,0 +1,25 @@
+{
+  "name": "t-111-5350-project",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "reset-css": "~2.0.20110126",
+    "fastclick": "~0.6.10",
+    "hammerjs": "~1.0.5",
+    "store-js": "~1.3.14",
+    "easeljs": "https://github.com/CreateJS/EaselJS.git#ccc620625beddb8fd3e33d4f407ef9a86b63aa3d",
+    "createjs-tweenjs": "https://github.com/CreateJS/TweenJS.git#b35a019250e1b7c498695da3304e1c19e967a5e1",
+    "soundjs": "https://github.com/CreateJS/SoundJS.git#c52f63399c5efb1501645e79d70b05f74aa4fc8a",
+    "greensock": "https://github.com/greensock/GreenSock-JS.git#4908187b900d2922e7d15090ab1194477fdecacd",
+    "flipclock": "https://github.com/objectivehtml/FlipClock.git#9b4e05dc7f79fb964d123a669f8a204e53a51896",
+    "jquery-simple-slider": "https://github.com/loopj/jquery-simple-slider.git#fa64f594496087b04b8bfe99cb0de236a1abb8f0"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "jquery.min.js"
+    },
+    "hammerjs": {
+      "main": "dist/jquery.hammer.min.js"
+    }
+  }
+}

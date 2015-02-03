@@ -1,0 +1,141 @@
+@-webkit-keyframes cloud-animation {
+  from {
+   -webkit-transform: translateX(0px);
+  }
+  to {
+   -webkit-transform: translateX(1280px);
+  }
+}
+
+@-webkit-keyframes shellShot {
+    25% {
+      -webkit-transform: translateY(-5em);
+    }
+    100% {
+      border-color: #8A662F;
+      background-color: #5F4419;
+      opacity:0.8;
+    }
+}
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    position: relative;
+    overflow:hidden;
+    font-family:helvetica;
+    -webkit-backface-visibility: hidden;
+    perspective:1000;
+}
+
+canvas {
+  width:100%;
+}
+
+em {
+  color:red;
+}
+
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+.clearfix:after { clear: both; }
+
+#container {
+    position: relative;
+    overflow: hidden;
+    margin:0 auto;
+    width: 100%;
+    -webkit-transition: transform 0.5s ease-in;
+}
+
+
+#stage {
+    position: absolute;
+    display:block;
+}
+
+#background {
+    position: relative;
+    z-index: 1;
+    cursor: crosshair;
+}
+
+#scoreboard {
+    position: absolute;
+    left: 50%;
+    margin:-0.5em 0 0;
+    width: 150px;
+    -webkit-transform: translateZ(0);
+}
+
+.actions {
+  margin-top:-5px;
+  min-height:7em;
+}
+
+.background-cloud {
+  position:absolute;
+  top:15%;
+  width:200px; height:150px;
+  background: url('../images/cloud.png') no-repeat;
+  background-size: 75%;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation:cloud-animation 35s infinite linear alternate;
+}
+
+.background-cloud-2 {
+  top:7.5%;
+  background-size: 60%;
+  opacity: 0.8;
+  -webkit-animation-duration:40s;
+  -webkit-animation-direction: alternate-reverse;
+}
+
+.background-sky {
+  background: linear-gradient(to top, #fff -50%, #74BFFF) no-repeat left top;
+  background-size: 100%;
+}
+
+.background-flora {
+    background: url('../images/bush.png') no-repeat right bottom,
+                url('../images/tree.png') no-repeat left bottom,
+                url('../images/grass.png') repeat-x left bottom;
+    background-size: 13%, 20%, 20%;
+    opacity: 1;
+}
+
+.background-land {
+    border-top: 5px solid rgb(53, 153, 28);
+    background: #86560a;
+    background-size: 100%;
+}
+
+.shell {
+    float:left;
+    margin:0.1em;
+    width: 25px;
+    height: 25px;
+    border: 5px solid #B0813C;
+    border-radius: 100%;
+    background-color: #8A662F;
+    background-size: 100%;
+    box-shadow: 0px 0px 1px black;
+    -webkit-transform: translateZ(0);
+
+}
+
+.shell:nth-child(10n+1) {
+  clear:left;
+}
+
+.shells {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    margin: 0.25em;
+    padding: 0.4em;
+    border: 1px solid;
+    background: rgba(41, 36, 36, 0.75) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+    box-shadow: inset 0px 0px 3px rgb(27, 25, 25);
+}
