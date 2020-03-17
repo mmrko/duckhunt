@@ -31,7 +31,7 @@
     "gulp-util": "^3.0.2",
     "jshint-stylish": "^1.0.0",
     "lazypipe": "^0.2.2",
-    "minimist": "^1.1.0",
+    "minimist": "^1.2.2",
     "opn": "^1.0.1",
     "serve-index": "^1.6.0",
     "serve-static": "^1.8.1",
