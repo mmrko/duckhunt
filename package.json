@@ -11,7 +11,7 @@
   "devDependencies": {
     "autoprefixer-core": "^5.0.0",
     "chalk": "^0.5.1",
-    "connect": "3.3.4",
+    "connect": "3.7.0",
     "connect-livereload": "^0.5.2",
     "del": "^1.1.1",
     "gulp": "^3.8.10",
@@ -20,7 +20,7 @@
     "gulp-if": "^1.2.5",
     "gulp-imagemin": "^2.1.0",
     "gulp-jshint": "^1.9.0",
-    "gulp-livereload": "^3.5.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^0.8.0",
     "gulp-postcss": "^4.0.2",
     "gulp-print": "^1.1.0",
